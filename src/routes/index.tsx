@@ -67,7 +67,8 @@ const nav = [
 
 function Portfolio() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground relative">
+      <CursorGlow />
       {/* Nav */}
       <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-xl bg-background/60 border-b border-border/40">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
