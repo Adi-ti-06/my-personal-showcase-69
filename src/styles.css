@@ -34,32 +34,35 @@
 
 :root {
   --radius: 0.75rem;
-  --background: oklch(0.08 0 0);
-  --foreground: oklch(0.98 0 0);
-  --card: oklch(0.13 0 0);
-  --card-foreground: oklch(0.98 0 0);
-  --popover: oklch(0.13 0 0);
-  --popover-foreground: oklch(0.98 0 0);
-  --primary: oklch(0.98 0 0);
-  --primary-foreground: oklch(0.08 0 0);
-  --primary-glow: oklch(0.85 0 0);
-  --secondary: oklch(0.18 0 0);
-  --secondary-foreground: oklch(0.98 0 0);
-  --muted: oklch(0.16 0 0);
-  --muted-foreground: oklch(0.65 0 0);
-  --accent: oklch(0.75 0 0);
-  --accent-foreground: oklch(0.08 0 0);
+  --background: oklch(0.09 0.02 250);
+  --foreground: oklch(0.98 0.01 240);
+  --card: oklch(0.13 0.03 250);
+  --card-foreground: oklch(0.98 0.01 240);
+  --popover: oklch(0.13 0.03 250);
+  --popover-foreground: oklch(0.98 0.01 240);
+  --primary: oklch(0.68 0.19 245);
+  --primary-foreground: oklch(0.08 0.02 250);
+  --primary-glow: oklch(0.78 0.16 220);
+  --secondary: oklch(0.18 0.04 250);
+  --secondary-foreground: oklch(0.98 0.01 240);
+  --muted: oklch(0.16 0.03 250);
+  --muted-foreground: oklch(0.7 0.04 240);
+  --accent: oklch(0.78 0.16 220);
+  --accent-foreground: oklch(0.08 0.02 250);
   --destructive: oklch(0.65 0.23 25);
-  --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.24 0 0);
-  --input: oklch(0.24 0 0);
-  --ring: oklch(0.98 0 0);
+  --destructive-foreground: oklch(0.98 0.01 240);
+  --border: oklch(0.24 0.04 250);
+  --input: oklch(0.24 0.04 250);
+  --ring: oklch(0.68 0.19 245);
 
-  --gradient-primary: linear-gradient(135deg, oklch(0.98 0 0), oklch(0.65 0 0));
-  --gradient-hero: radial-gradient(ellipse at top, oklch(0.98 0 0 / 0.12), transparent 60%),
-                   radial-gradient(ellipse at bottom right, oklch(0.65 0 0 / 0.1), transparent 60%);
-  --shadow-glow: 0 0 60px -10px oklch(0.98 0 0 / 0.25);
-  --shadow-elegant: 0 20px 50px -20px oklch(0 0 0 / 0.6);
+  --gradient-primary: linear-gradient(135deg, oklch(0.55 0.22 255), oklch(0.78 0.16 220));
+  --gradient-hero: radial-gradient(ellipse at top, oklch(0.55 0.22 255 / 0.35), transparent 60%),
+                   radial-gradient(ellipse at bottom right, oklch(0.78 0.16 220 / 0.25), transparent 60%);
+  --shadow-glow: 0 0 70px -10px oklch(0.55 0.22 255 / 0.55);
+  --shadow-elegant: 0 20px 50px -20px oklch(0.55 0.22 255 / 0.45);
+
+  --grid-pattern: linear-gradient(oklch(0.68 0.19 245 / 0.08) 1px, transparent 1px),
+                  linear-gradient(90deg, oklch(0.68 0.19 245 / 0.08) 1px, transparent 1px);
 }
 
 @layer base {
@@ -69,7 +72,17 @@
     color: var(--color-foreground);
     font-feature-settings: "ss01", "cv11";
   }
-  ::selection { background: oklch(0.98 0 0 / 0.2); color: oklch(0.08 0 0); }
+  ::selection { background: oklch(0.55 0.22 255 / 0.4); }
+}
+
+@utility bg-grid {
+  background-image: var(--grid-pattern);
+  background-size: 40px 40px;
+}
+
+@utility bg-dots {
+  background-image: radial-gradient(oklch(0.68 0.19 245 / 0.18) 1px, transparent 1px);
+  background-size: 24px 24px;
 }
 
 @utility text-gradient {
