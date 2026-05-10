@@ -61,35 +61,42 @@ function Portfolio() {
       </header>
 
       {/* Hero */}
-      <section id="top" className="relative pt-40 pb-32 px-6 bg-hero overflow-hidden">
+      <section id="top" className="relative pt-32 pb-24 px-6 bg-hero overflow-hidden">
         <div className="absolute inset-0 -z-10 opacity-30">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-3xl bg-primary/40" />
           <div className="absolute bottom-0 right-1/4 w-96 h-96 rounded-full blur-3xl bg-accent/30" />
         </div>
-        <div className="max-w-6xl mx-auto">
-          <Badge variant="outline" className="mb-6 border-primary/40 bg-primary/10 text-primary-foreground/90">
-            <Sparkles className="w-3 h-3 mr-1.5" /> Available for AI / SWE opportunities
-          </Badge>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.95]">
-            Aditi <br />
-            <span className="text-gradient">Prakash.</span>
-          </h1>
-          <p className="mt-8 max-w-2xl text-lg md:text-xl text-muted-foreground leading-relaxed">
-            AI & Software Engineer building intelligent, human-first products. Currently a 3rd year student at{" "}
-            <span className="text-foreground font-medium">VIT Bhopal University</span> with a CGPA of{" "}
-            <span className="text-foreground font-medium">8.5</span> — passionate about shipping AI-driven projects that matter.
-          </p>
-          <div className="mt-10 flex flex-wrap gap-4">
-            <Button asChild size="lg" className="bg-gradient-primary text-primary-foreground hover:opacity-90 shadow-[var(--shadow-glow)]">
-              <a href="#projects">View my work <ArrowRight className="w-4 h-4" /></a>
-            </Button>
-            <Button asChild size="lg" variant="outline">
-              <a href="mailto:srivastavaditi07@gmail.com">Contact me</a>
-            </Button>
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-[1fr_auto] gap-12 items-center">
+          <div>
+            <Badge variant="outline" className="mb-6 border-primary/40 bg-primary/10 text-primary-foreground/90">
+              <Sparkles className="w-3 h-3 mr-1.5" /> Available for AI / SWE opportunities
+            </Badge>
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[0.95]">
+              Hey, it's <span className="text-gradient">Aditi</span> 👋
+            </h1>
+            <p className="mt-8 max-w-2xl text-lg md:text-xl text-muted-foreground leading-relaxed">
+              I'm an AI &amp; Software Engineer building intelligent, human-first products. Currently a 3rd year student at{" "}
+              <span className="text-foreground font-medium">VIT Bhopal University</span> with a CGPA of{" "}
+              <span className="text-foreground font-medium">8.5</span> — passionate about shipping AI-driven projects that matter.
+            </p>
+            <div className="mt-10 flex flex-wrap gap-4">
+              <Button asChild size="lg" className="bg-gradient-primary text-primary-foreground hover:opacity-90 shadow-[var(--shadow-glow)]">
+                <a href="#projects">View my work <ArrowRight className="w-4 h-4" /></a>
+              </Button>
+              <Button asChild size="lg" variant="outline">
+                <a href="#contact">Contact me</a>
+              </Button>
+            </div>
+            <div className="mt-10 flex items-center gap-6 text-sm text-muted-foreground">
+              <span className="flex items-center gap-2"><MapPin className="w-4 h-4" /> Bhopal, India</span>
+              <span className="hidden sm:flex items-center gap-2">Origin: Bihar, India</span>
+            </div>
           </div>
-          <div className="mt-10 flex items-center gap-6 text-sm text-muted-foreground">
-            <span className="flex items-center gap-2"><MapPin className="w-4 h-4" /> Bhopal, India</span>
-            <span className="hidden sm:flex items-center gap-2">Origin: Bihar, India</span>
+          <div className="relative mx-auto lg:mx-0">
+            <div className="absolute -inset-4 rounded-full bg-gradient-primary opacity-40 blur-2xl" />
+            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-primary/40 shadow-[var(--shadow-elegant)]">
+              <img src={aditiPhoto} alt="Aditi Prakash" className="w-full h-full object-cover" />
+            </div>
           </div>
         </div>
       </section>
