@@ -26,20 +26,22 @@ const skills = {
 const languages = ["Java", "C++", "Python"];
 
 const achievements = [
-  { title: "CBSE Class 10 Boards", detail: "Scored 97.6% — top of class", icon: Trophy },
+  { title: "School Topper — CBSE Class 10", detail: "Scored 97.6% — ranked #1 in school", icon: Trophy },
   { title: "VIT Bhopal University", detail: "Current CGPA 8.5 · B.Tech CSE (3rd Year)", icon: Award },
 ];
+
+const softSkills = ["Leadership", "Communication", "Event Management", "Team Collaboration"];
 
 const activities = [
   {
     role: "Vice President",
     org: "Linpack Club",
-    description: "Leading initiatives at the official technical club of VIT Bhopal University — organizing workshops, hackathons, and tech events.",
+    description: "Leading the official technical club at VIT Bhopal University — organized numerous technical and non-technical events, workshops, and hackathons across campus.",
   },
   {
     role: "Active Volunteer",
     org: "NSS (National Service Scheme)",
-    description: "Currently serving in community-driven social initiatives and outreach programs.",
+    description: "Currently serving in community-driven social initiatives, outreach drives, and volunteer-led programs.",
   },
 ];
 
