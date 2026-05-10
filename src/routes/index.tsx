@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import aditiPhoto from "@/assets/aditi.jpg";
 import { CursorGlow } from "@/components/CursorGlow";
+import { useSectionHighlight } from "@/hooks/useSectionHighlight";
 
 export const Route = createFileRoute("/")({
   head: () => ({
