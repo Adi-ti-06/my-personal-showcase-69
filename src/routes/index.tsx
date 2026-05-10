@@ -67,6 +67,7 @@ const nav = [
 ];
 
 function Portfolio() {
+  useSectionHighlight();
   return (
     <div className="min-h-screen bg-background text-foreground relative">
       <CursorGlow />
