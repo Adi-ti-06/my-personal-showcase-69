@@ -295,6 +295,22 @@ function Portfolio() {
               </Card>
             ))}
           </div>
+
+          <Card className="mt-6 p-8 bg-card/50 border-border/60">
+            <div className="flex items-center gap-3 mb-5">
+              <div className="w-10 h-10 rounded-lg bg-primary/15 flex items-center justify-center">
+                <Sparkles className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="font-bold text-lg">Soft Skills</h3>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              {softSkills.map((s) => (
+                <span key={s} className="px-4 py-2 rounded-lg bg-gradient-primary/10 border border-primary/30 text-foreground font-medium">
+                  {s}
+                </span>
+              ))}
+            </div>
+          </Card>
         </div>
       </section>
 
