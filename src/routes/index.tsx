@@ -178,6 +178,10 @@ function Portfolio() {
                       <Badge variant="secondary">{p.tag}</Badge>
                     </div>
                     <h3 className="text-2xl font-bold mb-3">{p.name}</h3>
+                    <div className="mb-4 p-3 rounded-lg bg-primary/10 border border-primary/20">
+                      <p className="text-xs uppercase tracking-widest text-primary mb-1 font-semibold">The Problem</p>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{p.problem}</p>
+                    </div>
                     <p className="text-muted-foreground leading-relaxed mb-6">{p.description}</p>
                     <div className="flex flex-wrap gap-2">
                       {p.tech.map((t) => (
