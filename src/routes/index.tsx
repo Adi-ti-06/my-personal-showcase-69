@@ -49,7 +49,8 @@ const projects = [
   {
     name: "Skin Algnosis",
     tag: "AI / Healthcare",
-    description: "An AI-driven skin condition diagnosis tool that leverages machine learning to analyze skin images and provide preliminary insights — making early detection more accessible.",
+    problem: "People in rural areas don't have access to good doctors for skin diseases and suffer the most due to unhygienic environments.",
+    description: "An AI-driven skin condition diagnosis tool that analyzes skin images and provides preliminary insights — built to make early detection accessible to underserved communities. It has already helped people in the targeted rural area get faster, low-cost first-line guidance.",
     tech: ["Machine Learning", "Computer Vision", "Python"],
     icon: Brain,
   },
