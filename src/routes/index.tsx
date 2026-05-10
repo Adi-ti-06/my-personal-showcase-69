@@ -85,10 +85,15 @@ function Portfolio() {
 
       {/* Hero */}
       <section id="top" className="relative pt-32 pb-24 px-6 bg-hero overflow-hidden">
-        <div className="absolute inset-0 -z-10 opacity-30">
+        <div className="absolute inset-0 -z-10 bg-grid opacity-[0.15] [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)]" />
+        <div className="absolute inset-0 -z-10 opacity-40">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-3xl bg-primary/40" />
           <div className="absolute bottom-0 right-1/4 w-96 h-96 rounded-full blur-3xl bg-accent/30" />
         </div>
+        {/* Floating accent icons */}
+        <Code2 className="hidden md:block absolute top-24 right-12 w-6 h-6 text-primary/40 animate-pulse" />
+        <Brain className="hidden md:block absolute bottom-24 left-10 w-7 h-7 text-accent/50 animate-pulse" />
+        <Sparkles className="hidden md:block absolute top-1/2 right-1/3 w-5 h-5 text-primary/40" />
         <div className="max-w-6xl mx-auto grid lg:grid-cols-[1fr_auto] gap-12 items-center">
           <div>
             <Badge variant="outline" className="mb-6 border-primary/40 bg-primary/10 text-primary-foreground/90">
