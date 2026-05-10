@@ -3,6 +3,7 @@ import { Github, Linkedin, Mail, MapPin, ArrowRight, ExternalLink, Sparkles, Cod
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
+import aditiPhoto from "@/assets/aditi.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
