@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Github, Linkedin, Mail, MapPin, ArrowRight, ExternalLink, Sparkles, Code2, Brain, Layout } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, ArrowRight, ExternalLink, Sparkles, Code2, Brain, Layout, Award, Languages, Users, Trophy } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
