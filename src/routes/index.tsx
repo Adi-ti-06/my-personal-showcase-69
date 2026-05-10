@@ -57,6 +57,7 @@ const nav = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Work" },
   { href: "#skills", label: "Skills" },
+  { href: "#beyond", label: "Beyond" },
   { href: "#contact", label: "Contact" },
 ];
 
