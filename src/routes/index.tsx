@@ -236,7 +236,7 @@ function Portfolio() {
               <div>
                 <p className="text-sm uppercase tracking-widest text-primary mb-2">Education</p>
                 <h3 className="text-2xl font-bold">VIT Bhopal University</h3>
-                <p className="text-muted-foreground mt-1">B.Tech Computer Science · 3rd Year</p>
+                <p className="text-muted-foreground mt-1">B.Tech CSE (AI & ML) · 3rd Year</p>
               </div>
               <div className="text-right">
                 <p className="text-sm text-muted-foreground">Current CGPA</p>
