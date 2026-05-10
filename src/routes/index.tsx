@@ -26,20 +26,22 @@ const skills = {
 const languages = ["Java", "C++", "Python"];
 
 const achievements = [
-  { title: "CBSE Class 10 Boards", detail: "Scored 97.6% — top of class", icon: Trophy },
+  { title: "School Topper — CBSE Class 10", detail: "Scored 97.6% — ranked #1 in school", icon: Trophy },
   { title: "VIT Bhopal University", detail: "Current CGPA 8.5 · B.Tech CSE (3rd Year)", icon: Award },
 ];
+
+const softSkills = ["Leadership", "Communication", "Event Management", "Team Collaboration"];
 
 const activities = [
   {
     role: "Vice President",
     org: "Linpack Club",
-    description: "Leading initiatives at the official technical club of VIT Bhopal University — organizing workshops, hackathons, and tech events.",
+    description: "Leading the official technical club at VIT Bhopal University — organized numerous technical and non-technical events, workshops, and hackathons across campus.",
   },
   {
     role: "Active Volunteer",
     org: "NSS (National Service Scheme)",
-    description: "Currently serving in community-driven social initiatives and outreach programs.",
+    description: "Currently serving in community-driven social initiatives, outreach drives, and volunteer-led programs.",
   },
 ];
 
@@ -293,6 +295,22 @@ function Portfolio() {
               </Card>
             ))}
           </div>
+
+          <Card className="mt-6 p-8 bg-card/50 border-border/60">
+            <div className="flex items-center gap-3 mb-5">
+              <div className="w-10 h-10 rounded-lg bg-primary/15 flex items-center justify-center">
+                <Sparkles className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="font-bold text-lg">Soft Skills</h3>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              {softSkills.map((s) => (
+                <span key={s} className="px-4 py-2 rounded-lg bg-gradient-primary/10 border border-primary/30 text-foreground font-medium">
+                  {s}
+                </span>
+              ))}
+            </div>
+          </Card>
         </div>
       </section>
 
