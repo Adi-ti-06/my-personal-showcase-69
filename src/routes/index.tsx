@@ -42,7 +42,7 @@ const activities = [
   {
     role: "Active Volunteer",
     org: "NSS (National Service Scheme)",
-    description: "Currently serving in community-driven social initiatives, outreach drives, and volunteer-led programs.",
+    description: "Actively volunteering in community-driven initiatives — contributed to the National Youth Parliament and a 7-day Blood Donation Camp, alongside ongoing outreach drives and volunteer-led programs.",
   },
 ];
 
