@@ -27,7 +27,7 @@ const languages = ["Java", "C++", "Python"];
 
 const achievements = [
   { title: "School Topper — CBSE Class 10", detail: "Scored 97.6% — ranked #1 in school", icon: Trophy },
-  { title: "VIT Bhopal University", detail: "Current CGPA 8.5 · B.Tech CSE (3rd Year)", icon: Award },
+  { title: "VIT Bhopal University", detail: "Current CGPA 8.5 · B.Tech CSE (AI & ML), 3rd Year", icon: Award },
 ];
 
 const softSkills = ["Leadership", "Communication", "Event Management", "Team Collaboration"];
