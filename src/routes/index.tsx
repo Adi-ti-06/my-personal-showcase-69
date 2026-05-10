@@ -105,7 +105,7 @@ function Portfolio() {
               <Sparkles className="w-3 h-3 mr-1.5" /> Available for AI / SWE opportunities
             </Badge>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[0.95]">
-              Hey, it's <span className="text-gradient">Aditi</span> 👋
+              Hey, it's <span className="text-wave inline-block">Aditi</span> 👋
             </h1>
             <p className="mt-8 max-w-2xl text-lg md:text-xl text-muted-foreground leading-relaxed">
               I'm an AI &amp; Software Engineer building intelligent, human-first products. Currently a 3rd year student at{" "}
