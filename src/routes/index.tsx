@@ -27,7 +27,7 @@ const languages = ["Java", "C++", "Python"];
 
 const achievements = [
   { title: "School Topper — CBSE Class 10", detail: "Scored 97.6% — ranked #1 in school", icon: Trophy },
-  { title: "VIT Bhopal University", detail: "Current CGPA 8.5 · B.Tech CSE (3rd Year)", icon: Award },
+  { title: "VIT Bhopal University", detail: "Current CGPA 8.5 · B.Tech CSE (AI & ML), 3rd Year", icon: Award },
 ];
 
 const softSkills = ["Leadership", "Communication", "Event Management", "Team Collaboration"];
@@ -49,7 +49,8 @@ const projects = [
   {
     name: "Skin Algnosis",
     tag: "AI / Healthcare",
-    description: "An AI-driven skin condition diagnosis tool that leverages machine learning to analyze skin images and provide preliminary insights — making early detection more accessible.",
+    problem: "People in rural areas don't have access to good doctors for skin diseases and suffer the most due to unhygienic environments.",
+    description: "An AI-driven skin condition diagnosis tool that analyzes skin images and provides preliminary insights — built to make early detection accessible to underserved communities. It has already helped people in the targeted rural area get faster, low-cost first-line guidance.",
     tech: ["Machine Learning", "Computer Vision", "Python"],
     icon: Brain,
   },
@@ -177,6 +178,10 @@ function Portfolio() {
                       <Badge variant="secondary">{p.tag}</Badge>
                     </div>
                     <h3 className="text-2xl font-bold mb-3">{p.name}</h3>
+                    <div className="mb-4 p-3 rounded-lg bg-primary/10 border border-primary/20">
+                      <p className="text-xs uppercase tracking-widest text-primary mb-1 font-semibold">The Problem</p>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{p.problem}</p>
+                    </div>
                     <p className="text-muted-foreground leading-relaxed mb-6">{p.description}</p>
                     <div className="flex flex-wrap gap-2">
                       {p.tech.map((t) => (
@@ -231,7 +236,7 @@ function Portfolio() {
               <div>
                 <p className="text-sm uppercase tracking-widest text-primary mb-2">Education</p>
                 <h3 className="text-2xl font-bold">VIT Bhopal University</h3>
-                <p className="text-muted-foreground mt-1">B.Tech Computer Science · 3rd Year</p>
+                <p className="text-muted-foreground mt-1">B.Tech CSE (AI & ML) · 3rd Year</p>
               </div>
               <div className="text-right">
                 <p className="text-sm text-muted-foreground">Current CGPA</p>
