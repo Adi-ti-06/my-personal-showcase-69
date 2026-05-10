@@ -232,6 +232,67 @@ function Portfolio() {
               </div>
             </div>
           </Card>
+
+          {/* Languages */}
+          <Card className="mt-6 p-8 bg-card/50 border-border/60">
+            <div className="flex items-center gap-3 mb-5">
+              <div className="w-10 h-10 rounded-lg bg-primary/15 flex items-center justify-center">
+                <Languages className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="font-bold text-lg">Programming Languages</h3>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              {languages.map((l) => (
+                <span key={l} className="px-4 py-2 rounded-lg bg-gradient-primary/10 border border-primary/30 text-foreground font-medium">
+                  {l}
+                </span>
+              ))}
+            </div>
+          </Card>
+        </div>
+      </section>
+
+      {/* Beyond — Achievements & Activities */}
+      <section id="beyond" className="py-28 px-6 border-t border-border/40">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-12">
+            <p className="text-sm uppercase tracking-widest text-primary mb-3">Beyond Code</p>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Achievements & Activities.</h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-6">
+            {achievements.map((a) => {
+              const Icon = a.icon;
+              return (
+                <Card key={a.title} className="p-6 bg-card/50 border-border/60 flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-primary flex items-center justify-center shadow-[var(--shadow-glow)] shrink-0">
+                    <Icon className="w-6 h-6 text-primary-foreground" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg">{a.title}</h3>
+                    <p className="text-muted-foreground mt-1">{a.detail}</p>
+                  </div>
+                </Card>
+              );
+            })}
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {activities.map((a) => (
+              <Card key={a.org} className="p-6 bg-card/50 border-border/60">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 rounded-lg bg-primary/15 flex items-center justify-center">
+                    <Users className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-xs uppercase tracking-widest text-primary">{a.role}</p>
+                    <h3 className="font-bold text-lg">{a.org}</h3>
+                  </div>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">{a.description}</p>
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
 
