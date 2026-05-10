@@ -23,6 +23,26 @@ const skills = {
   "Frontend": ["React", "TypeScript", "Tailwind CSS"],
 };
 
+const languages = ["Java", "C++", "Python"];
+
+const achievements = [
+  { title: "CBSE Class 10 Boards", detail: "Scored 97.6% — top of class", icon: Trophy },
+  { title: "VIT Bhopal University", detail: "Current CGPA 8.5 · B.Tech CSE (3rd Year)", icon: Award },
+];
+
+const activities = [
+  {
+    role: "Vice President",
+    org: "Linpack Club",
+    description: "Leading initiatives at the official technical club of VIT Bhopal University — organizing workshops, hackathons, and tech events.",
+  },
+  {
+    role: "Active Volunteer",
+    org: "NSS (National Service Scheme)",
+    description: "Currently serving in community-driven social initiatives and outreach programs.",
+  },
+];
+
 const projects = [
   {
     name: "Skin Algnosis",
